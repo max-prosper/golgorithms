@@ -12,8 +12,8 @@ func insertionSort(nums []int) {
 		// So, technically we divide our input slice into two:
 		// the 1st one is sorted because it contains only one
 		// element (the first one from the input),
-		// and the 2nd one is unsored slice which contains the rest of the input.
-		// We wll be inserting every element of 2nd slice
+		// and the 2nd one is unsorted slice which contains the rest of the input.
+		// We'll be inserting every element of 2nd slice
 		// into the end of the 1nd one
 
 		// Compare each element of sorted
@@ -26,7 +26,7 @@ func insertionSort(nums []int) {
 			// next element to the 'key'
 			i--
 		}
-		// put 'key' to the former position of last bigger element
+		// put 'key' to the former position of the last bigger element
 		nums[i+1] = key
 	}
 
