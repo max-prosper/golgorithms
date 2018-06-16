@@ -9,17 +9,17 @@ func insertionSort(nums []int) {
 		// 'i' is the index of the element to compare 'key' with,
 		// initially it's the first element of the input slice.
 		i := j - 1
-		// So, technically we devide our input slice into two:
-		// 1st one considered ordered because it contains
-		// only one element (the first one from the input).
-		// 2nd is an unsored slice which contains the rest of the input.
+		// So, technically we divide our input slice into two:
+		// the 1st one is sorted because it contains only one
+		// element (the first one from the input),
+		// and the 2nd one is unsored slice which contains the rest of the input.
 		// We wll be inserting every element of 2nd slice
-		// in to the end of the 1nd one
+		// into the end of the 1nd one
 
 		// Compare each element of sorted
 		// slice to inserted element
 		for i >= 0 && nums[i] > key {
-			// if compared element is bigger than the 'key' ,
+			// if compared element is bigger than the 'key',
 			// move former by one position to the right
 			nums[i+1] = nums[i]
 			// and then decrease 'i' by 1 to compare
